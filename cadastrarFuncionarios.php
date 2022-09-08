@@ -188,7 +188,7 @@ form .user-details .input-box{
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="sair.php">
+                <li><a href="./back-end/sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>

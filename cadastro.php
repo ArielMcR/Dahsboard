@@ -16,7 +16,7 @@
         <div class="right-login">
             <div class="card-login"> 
                 <h1>Cadastro</h1>
-                <form action="cadastroBd.php" method="post">
+                <form action="./back-end/cadastroBd.php" method="post">
                   <div class="textfield">
                     <label for="usuario"> Usuário</label>
                     <input type="text" name="usuario" placeholder="Usuário">

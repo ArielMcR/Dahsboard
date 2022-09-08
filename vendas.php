@@ -1,4 +1,4 @@
-<?php require_once("validaregistro.php") ?> 
+<?php require_once("./back-end/validaregistro.php") ?> 
 
 <!DOCTYPE html>
 <!--=== Coding by CodingLab | www.codinglabweb.com === -->
@@ -188,7 +188,7 @@ form .user-details .input-box{
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="sair.php">
+                <li><a href="./back-end/sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -219,7 +219,7 @@ form .user-details .input-box{
         <div class="container">
             <div class="title">Cadastrar Vendas</div>
                 <div class="content">
-                    <form action="testevendas.php" method="post"autocomplete="on">
+                    <form action="./back-end/cadastrarVendas.php" method="post"autocomplete="on">
                         <div class="user-details">
                             <div class="input-box">
                                 <span class="details">Mês do Ano</span>
@@ -279,7 +279,7 @@ form .user-details .input-box{
                           <td><?=$linha["Mês"]?></td>
                           <td><?=$linha["ano"]?></td>
                           <td><a class="link" href="alterar.php?id=<?=$linha["id"]?>">Alterar</a></td>
-                          <td><a class="link-excluir" href="excluir.php?id=<?=$linha["id"]?>">Excluir</a></td>
+                          <td><a class="link-excluir" href=".back-end/excluir.php?id=<?=$linha["id"]?>">Excluir</a></td>
                           </tr>
                          <?php
                          }

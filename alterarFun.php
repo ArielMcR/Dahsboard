@@ -1,4 +1,4 @@
-<?php require_once("validaregistro.php");require_once("conn.php") ?> 
+<?php require_once("validaregistro.php");require_once("./back-end/conn.php") ?> 
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -186,7 +186,7 @@ form .user-details .input-box{
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="sair.php">
+                <li><a href="./back-end/sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
