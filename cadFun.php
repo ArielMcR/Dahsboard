@@ -1,5 +1,5 @@
-<?php include("./back-end/conn.php");
-include("./back-end/validaregistro.php");
+<?php include("conn.php");
+include("validaregistro.php");
 
 @$nome = trim($_POST["nome"]);
 @$sobrenome = trim($_POST["sobrenome"]);
@@ -11,7 +11,7 @@ include("./back-end/validaregistro.php");
 $sql = "INSERT INTO funcionarios VALUES(null,'$nome','$sobrenome',$idade,'$setor', '$email', '$telefone')";
 $result = $conn->query($sql);
 if(!$result){
-    header("Location: ./back-end/erro.php");
+    header("Location: erro.php");
     exit(0);
 
 } else{

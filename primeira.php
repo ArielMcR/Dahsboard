@@ -1,4 +1,4 @@
-<?php require_once("./back-end/validaregistro.php"); ?>
+<?php require_once("validaregistro.php"); ?>
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
@@ -73,7 +73,7 @@
                     <i class="uil uil-shopping-cart"></i>
                     <span class="link-name">Vendas</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="graficos.php">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Gráficos</span>
                 </a></li>
@@ -88,7 +88,7 @@
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="./back-end/sair.php">
+                <li><a href="sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -116,7 +116,6 @@
                 <i class="uil uil-search"></i>
                     <input type="text" placeholder="Pesquisar..." list="pesquisar">
             </div>    
-        </div>
         </div>
         <div class="dash-content">
             <div class="overview">
@@ -211,8 +210,8 @@
                          </table>
                         </span>
                     </div>
-                </div>
             </div>
+        </div>
 
             <div class="activity">
                 <div class="title">
@@ -221,7 +220,7 @@
                 </div>            
             <div class="activity-data">
             <?php   
-                      @$ano = $ano = $_POST['anoVenda'];
+                      @$ano = $_POST['anoVenda'];
                       if($ano == null){
                          $ano = 2022;
 

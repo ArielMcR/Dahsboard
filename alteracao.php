@@ -1,4 +1,4 @@
-<?php require_once("validaregistro.php");require_once("./back-end/conn.php") ?> 
+<?php require_once("validaregistro.php");require_once("conn.php") ?> 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -163,30 +163,30 @@ form .user-details .input-box{
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="primeira.php">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
-                </a></li>
-                <li><a href="vendas.php">
-                    <i class="uil uil-shopping-cart"></i>
-                    <span class="link-name">Vendas</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Gráficos</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-user-md"></i>
-                    <span class="link-name">Cadastrar Funcionário</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chat-info"></i>
-                    <span class="link-name">Demitir Funcionário</span>
-                </a></li>
-            </ul>
+                    <li><a href="primeira.php">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Dahsboard</span>
+                    </a></li>
+                    <li><a href="vendas.php">
+                        <i class="uil uil-shopping-cart"></i>
+                        <span class="link-name">Vendas</span>
+                    </a></li>
+                    <li><a href="graficos.php">
+                        <i class="uil uil-chart"></i>
+                        <span class="link-name">Gráficos</span>
+                    </a></li>
+                    <li><a href="cadastrarFuncionarios.php">
+                        <i class="uil uil-user-md"></i>
+                        <span class="link-name">Cadastrar Funcionário</span>
+                    </a></li>
+                    <li><a href="funcionarios.php">
+                        <i class="uil uil-chat-info"></i>
+                        <span class="link-name">Funcionário</span>
+                    </a></li>
+              </ul>
             
             <ul class="logout-mode">
-                <li><a href="./back-end/sair.php">
+                <li><a href="sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -222,7 +222,7 @@ form .user-details .input-box{
                 @$valorBruto= trim($_POST["valorBruto"]);
                 @$ano = trim($_POST['ano']);
         
-                $sql = "UPDATE vendas SET valorBruto = $valorBruto, valorLiquido = $valorLiquido, Mês= '$mes'
+                $sql = "UPDATE vendas SET valorBruto = $valorBruto, valorLiquido = $valorLiquido, Mês= '$mes',
                 ano=$ano WHERE id = '$id'";
                 $result = $conn->query($sql);
         

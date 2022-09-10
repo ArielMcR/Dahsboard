@@ -1,4 +1,4 @@
-<?php require_once("validaregistro.php");require_once("./back-end/conn.php") ?> 
+<?php require_once("validaregistro.php");require_once("conn.php") ?> 
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -171,7 +171,7 @@ form .user-details .input-box{
                     <i class="uil uil-shopping-cart"></i>
                     <span class="link-name">Vendas</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="graficos.php">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Gráficos</span>
                 </a></li>
@@ -186,7 +186,7 @@ form .user-details .input-box{
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="./back-end/sair.php">
+                <li><a href="sair.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendas</title> 
+    <title>Funcionários</title> 
     <link rel="stylesheet" href="./estilos/style2.css">
     <link rel="icon" href="./imagens/logo.png">
     <style> 
@@ -149,8 +149,6 @@ form .user-details .input-box{
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-
     
 </head>
 <body>
@@ -173,7 +171,7 @@ form .user-details .input-box{
                     <i class="uil uil-shopping-cart"></i>
                     <span class="link-name">Vendas</span>
                 </a></li>
-                <li><a href="graficos.php">
+                <li><a href="#">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Gráficos</span>
                 </a></li>
@@ -217,77 +215,7 @@ form .user-details .input-box{
             </div>
         </div>
         <div class="container">
-            <div class="title">Cadastrar Vendas</div>
-                <div class="content">
-                    <form action="testevendas.php" method="post"autocomplete="on">
-                        <div class="user-details">
-                            <div class="input-box">
-                                <span class="details">Mês do Ano</span>
-                                <input type="text" placeholder="Digite o mês da venda" required list="mesdoano" name="mês">
-                                <datalist id="mesdoano">
-                                    <option>Janeiro</option>
-                                    <option>Fevereiro</option>
-                                    <option>Março</option>
-                                    <option>Abril</option>
-                                    <option>Maio</option>
-                                    <option>Junho</option>
-                                    <option>Julho</option>
-                                    <option>Agosto</option>
-                                    <option>Setembro</option>
-                                    <option>Outubro</option>
-                                    <option>Novembro</option>
-                                    <option>Dezembro</option>
-                                    <option></option>
-                                </datalist>
-                            </div>
-                            <div class="input-box">
-                                <span class="details">Valor Liquído</span>
-                                <input type="text" placeholder="Digite o valor liquído do mês" required name="valorLiquido" min="0">
-                            </div>
-                            <div class="input-box">
-                                <span class="details">Valor Bruto</span>
-                                <input type="number" placeholder="Digite o valor bruto do mês" name="valorBruto" required min="0">
-                            </div>
-                            <div class="input-box">
-                                <span class="details">Ano</span>
-                                <input type="number" placeholder="Digite o ano" required name="ano">
-                            </div>
-                        </div>
-                            <div class="button">
-                            <input type="submit" value="Cadastrar">
-                            </div>
-                    </form>
-                    <div class="vendas"> 
-                     <table style="text-aling:center;" id="customers">
-                        <h1 class="title">VENDAS CADASTRADAS</h1>
-                          <th>ID</th>
-                          <th>Valor Bruto</th> 
-                          <th>Valor Liquído</th>  
-                          <th>Mês</th>
-                          <th>Ano</th>
-                          <th>Alterar</th>
-                          <th>Excluir</th>
-                        <?php 
-                         $sql_tipo = "SELECT * FROM vendas ORDER BY ano";
-                         $resulta = $con->query($sql_tipo);
-                         while($linha = $resulta->fetch_assoc()) {
-                         ?>
-                          <tr>
-                          <td><?=$linha["id"]?></td>
-                          <td><?=number_format($linha["valorBruto"], 2, ',', '.')?></td>
-                          <td><?=number_format($linha["valorLiquido"], 2, ',', '.')?></td>
-                          <td><?=$linha["Mês"]?></td>
-                          <td><?=$linha["ano"]?></td>
-                          <td><a class="link" href="alterar.php?id=<?=$linha["id"]?>">Alterar</a></td>
-                          <td><a class="link-excluir" href="excluir.php?id=<?=$linha["id"]?>">Excluir</a></td>
-                          </tr>
-                         <?php
-                         }
-                         ?>
-                         </table>
-                     </div>
-                         
-                </div>
+            <H1 style="color:red;">PÁGINA EM CONSTRUÇÃO</H1>
          </div>
 
 
