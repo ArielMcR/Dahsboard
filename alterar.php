@@ -174,13 +174,13 @@ form .user-details .input-box{
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Gráficos</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="cadastrarFuncionarios.php">
                     <i class="uil uil-user-md"></i>
                     <span class="link-name">Cadastrar Funcionário</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="funcionarios.php">
                     <i class="uil uil-chat-info"></i>
-                    <span class="link-name">Demitir Funcionário</span>
+                    <span class="link-name">Funcionário</span>
                 </a></li>
             </ul>
             

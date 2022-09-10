@@ -49,6 +49,7 @@
     </style>
     <link rel="stylesheet" href="./estilos/style2.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Dashboard Painel</title>
     
