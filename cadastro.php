@@ -22,7 +22,7 @@
                         <input type="text" name="usuario" placeholder="Usuário">
 
                         <label for="email"> Email</label>
-                        <input type="text" name="email" placeholder="email">
+                        <input type="email" name="email" placeholder="email">
 
                       </div>
                       <div class="textfield">
